@@ -3,6 +3,8 @@
     "prisma": "^4.7.0"
   },
   "dependencies": {
-    "@prisma/client": "^4.7.0"
+    "@prisma/client": "^4.7.0",
+    "nextjs": "^0.0.3",
+    "recharts": "^2.2.0"
   }
 }
