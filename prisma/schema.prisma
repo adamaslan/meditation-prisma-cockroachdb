@@ -3,14 +3,14 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "cockroachdb"
   url      = env("DATABASE_URL")
 }
 
 model mytable {
-  time_stamp    String   @db.VarChar(24)
-  date          DateTime @db.Date
-  time          String   @db.VarChar(8)
-  counter_value BigInt   @id
-  increment     BigInt
+  time_stamp    String
+  date          DateTime
+  time          String
+  counter_value Int   @id
+  increment     Int
 }
